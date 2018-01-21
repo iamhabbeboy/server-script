@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Table </title>
+    <style media="screen">
+      body {
+        font-family: sans-serif, helvetica;
+        color: #666;
+        background-color: #34495E;
+      }
+
+      .table {
+        width: 800px;
+        margin: auto;
+      }
+      .table tr td{
+        font-size: 12px;
+      }
+
+      input[type="text"] {
+        padding: 4px;
+        width: 95%;
+        border: 1px solid #ddd;
+      }
+
+      .submitBtn {
+        padding: 10px 30px;
+        border: 2px solid #09666c;
+        color: #09666c;
+        cursor: pointer;
+      }
+
+      .main-content {
+        background: #1ABC9C;
+        width: 800px;
+        margin: auto;
+      }
+
+      .output {
+        padding: 5px;
+        background: #09463a;
+        color: #FFF;
+        font-size: 13px;
+        display: none;
+      }
+    </style>
+    <script src="script.js" charset="utf-8"></script>
+    <script>
+      window.onload = function() {
+        Gen();
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main-content">
+
+      <table class="table" bgcolor="#1ABC9C" cellpadding="10" cellspacing="1">
+        <tr>
+          <th>Days</th>
+          <th>Input Forms</th>
+          <th>Checks</th>
+        </tr>
+      </table>
+
+      <button class="submitBtn" name="button">Submit </button>
+
+      <div class="output"></div>
+    </div>
+
+  </body>
+</html>
